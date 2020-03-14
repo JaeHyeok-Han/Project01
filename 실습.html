@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="html실습자료">
+    <meta name="keywords" content="컴퓨터공학과, html, css, javascript, 웹페이지, 개발자">
+    <meta name="author" content="jeahyeok-han">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습파일입니다</title>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>성별</th>
+          <th>주소</th>
+          <th>회비</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>최진혁</td>
+          <td>남</td>
+          <td rowspan="2">청주</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td>최유빈</td>
+          <td>여</td>
+          <td>500</td>
+        </tr>
+      </tbody>
+
+
+      <tfook>
+        <tr>
+          <td colspan="3">합계</td>
+          <td>1500</td>
+        </tr>
+      </tfook>
+    </table>
+    <form action="http://localhost/login.php">
+      <P><label for="id_txt">아이디</label>: <input id="id_txt" type="text" name="id" value="기본값"></p>
+      <p><label for="pw_txt">비밀번호</label>: <input id="pw_txt" type="password" name="pw" value="기본값"></p>
+      <P><label for="ad_txt">주소</label>: <input  id="ad_txt" type="text" name="ad"></p>
+      <p><label>문자박스</label>: <textarea name="text" row="2" cols="30"></textarea></p>
+      <input type="time">
+      <input type="submit" value="로그인">
+      <input type="button" value="버튼">
+      <input type="reset">
+    </form>
+    <form action="http://localhost/color.php">
+      <h1>색상1</h1>
+      <select name="color1">
+        <option value="red">붉은색</option>
+        <option value="black">검은색</option>
+        <option value="blue">파란색</option>
+      </select>
+      <h1>색상2 (다중선택)</h1>
+      <select name="color2" multiple>
+        <option value="red">붉은색</option>
+        <option value="black">검은색</option>
+        <option value="blue">파란색</option>
+      </select>
+      <input type="submit">
+    </form>
+    <form action="http://localhost/color2.php">
+      <p>
+        <h1>색상1</h1>
+          붉은색: <input type="radio" name="color" value="red">
+          검은색: <input type="radio" name="color" value="black">
+          파란색: <input type="radio" name="color" value="blue">
+      </p>
+      <p>
+        <h1>색상2 (다중선택)</h1>
+          붉은색: <input type="checkbox" name="color2" value="red">
+          검은색: <input type="checkbox" name="color2" value="black">
+          파란색: <input type="checkbox" name="color2" value="blue">
+      </p>
+      <input type="submit">
+    </form>
+    <form action="http://localhost/color3.php">
+      <input type="text" name="id">
+      <input type="hidden" name="hide" value="한재혁">
+      <input type="submit">
+    </form>
+    <form action="http://localhost/file.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="img">
+        <input type="submit">
+    </form>
+    <div>
+      <form>
+        <font size="7" color="red">Hello</font>world
+      </form>
+    </div>
+    <iframe sandbox src="C:\Users\한재혁\Desktop\HTML\web\index.html" width="500" height="500" frameborder="0"></iframe>
+  </body>
+</html>
